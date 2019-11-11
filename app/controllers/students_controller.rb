@@ -10,6 +10,8 @@ class StudentsController < ApplicationController
   
   def active 
     @student = Student.find(params[:id])
+    if @student.active 
+      
   end 
 
   private
