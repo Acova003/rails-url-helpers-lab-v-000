@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
   
   def active 
-    
+    @student = Student.find(params[:id])
   end 
 
   private
