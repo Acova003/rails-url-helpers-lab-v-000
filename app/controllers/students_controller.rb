@@ -15,8 +15,8 @@ class StudentsController < ApplicationController
     else 
       @student.active = false 
     end 
+    @student.active
     @student.save 
-    @student.sactive
   end 
 
   private
