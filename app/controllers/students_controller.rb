@@ -12,6 +12,11 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     if @student.active 
       @student.active = true 
+    else 
+      @student.active = false 
+    end 
+    @student.save 
+    @student.sactive
   end 
 
   private
