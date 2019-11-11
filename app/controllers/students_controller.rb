@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   def active 
     @student = Student.find(params[:id])
     if @student.active 
-      
+      @student.active = true 
   end 
 
   private
